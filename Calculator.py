@@ -1,0 +1,11 @@
+ #-*- coding: cp1251 -*-
+
+a = float(input("¬ведите 1 значение: "))
+s = input("¬ведите 2 значение: ")
+
+x = int(s)
+
+print("Sum = ", a + x)
+print("Minus = ", a - x)
+print("Divide = ", a / x)
+print("Multy = ", a * x)

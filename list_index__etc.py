@@ -1,0 +1,29 @@
+#-*- coding: cp1251 -*-
+
+from ctypes.wintypes import SHORT
+
+
+words = {'short' : '√оша', 'long' : '√еоргий'}
+print(words['short'])
+
+list = [5, "Stroka", True, 5.23, 7] # list
+list.append("Hi")
+b = [5,8,1,9,6]
+list.extend(b)
+list.remove(5)
+list.remove(5)
+list.pop(0)
+b.reverse()
+b.clear()
+# print(list)
+# print(b)
+
+cor = (5, "Stroka", True, 5.23, 7) # tuple - кортеж
+# cor[0] = 6 # нельз€ измен€ть
+# print(list[2:-2:2])
+
+mult = set(list) # множество (всегда в разном пор€дке и все элементы уникальны)
+print(mult)
+
+f_mult = frozenset(list) # то же самое множество, но нельз€ мен€ть
+print(f_mult)
