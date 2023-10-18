@@ -1,5 +1,6 @@
 import unittest
 import user
+import pytest
 
 class TestUser(unittest.TestCase):
     def setUp(self):            #Call before all tests
@@ -24,6 +25,7 @@ class TestUser(unittest.TestCase):
     def test_print_all(self):
         self.assertEqual(self.obj.printAll(), "Bot возрастом 35")
 
+    @pytest.mark.slow
     def test_print_to_file(self):
         self.obj.printToFile("text.txt")
         result = self.obj.readFromFile("text.txt")
